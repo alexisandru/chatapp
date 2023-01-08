@@ -1,0 +1,83 @@
+.container {
+  grid-area: 2 / 1 / 6 / 2;
+
+
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 5px;
+
+}
+
+.categorias {
+  display: flex;
+  align-items:center;
+}
+
+.categoria {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoriaActiva {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoria:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.mensajes {
+  overflow: auto;
+}
+
+.mensaje {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.mensaje:hover {
+  background-color: rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.texto {
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.nombre {
+  font-size: 1em;
+}
+
+.textoMensaje {
+  margin: 3px 0;
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hora {
+  font-size: 0.8em;
+  flex-shrink: 0;
+  color: rgba(0,0,0,0.8);
+}
